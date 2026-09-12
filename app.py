@@ -37,7 +37,7 @@ _LOGO_B64 = (
     "JiYmJiYmJiYmJiYmGYrxPsWObc/TxjY9tLFNTExMTMyytrHNWrKxbWzTcbOsTUxMTExMTExMTExMTExMTExMTExMTExMTExMTExM"
     "TExMTExMTExMTExMTExMTExMTDpXLCup2LHtedrYpoc2tomJiYlJL1vU1u4+eWxrSZ///Jsemh6ajpuYmJiYmJiYmJiYtEGMtLex"
     "TQ9tbBvblN8Ax8a2sU0PbWy7cVskNraNbTrepxa5iYmJiYmJiYmJiYmJiYmJSYZivE+xY9vztLFND21sExMTExMTExMTExMTExMT"
-    "ExMTExMTExMTExMTExMTk04R8+ibmJiYmJiYmJiYJFnIflH2kN8PV3mfSZ9LyabAxCRXcHZAHAIY5O/KACIAxwJ4I4C1AHYaOJuY"
+    "ExMTExMTExMTExMTk04R8+ibmJiYmJiYmJiYJFnIflH2kN8PV3mfSZ9LyabAxCRXcHZAHAIY5O/KACIAxwJ4I4C1AHYaOJuY"
     "mJgUbwQNEJyH1NezAVwDYDuAjwGYrEA8tGkzMTExyd+CdlZzid/vD+BSAHcBGAUwzu/P4v8M28nWJE2ZbOzixrbn2ftjB54VvRDA"
     "XwN4EsA2AA8C2AxgN4AvApifMpbpoY1tN25gbWNnPHYJwCR+fwKAb0C45gjArwG8DsDHIZz0OgAX870DpuOmh438o7W7z9+ysZb0"
     "vamHcwC8BsCPAOyi5fw1ACv49yUAbgAwBuDHAA6p43pMD03HTUxMvEUTpABB0gukNP4EwL0AXgCwCsAHABwGYATCNw8CeCuAJwjg"
@@ -99,7 +99,7 @@ _LOGO_B64 = (
     "AFYD+CQkAUJbYcOIK9btgjgEv4W4/KVzADon1WRI+NfPINzyZkjG4RmobLiqK+M5K/Q2WqFXADhRWYSdrIdu/EMAXAZxGN7BDcrN"
     "33ATdEOavmjLfQqkAe/zkGJVf8jfDSGbetWGKyZtE1edbQGAj9AKebeyLD9LsNCvMR7Xb4Z4798F4GVcjPsjThxIs3xKCSCswdu1"
     "PPI7OTeiYGHKMdyV/gQt1o8RPMd4PL8UUlxfUzvDkIp1d0Gcexsgac4Ho9IR5j5jOiRr8CaOuwHA3xL0h6osApeI8bukOlxh/H2U"
-    "BdrJfKqrdvdKAPdwXj/NjT+scvpq1KgIEp71Em6GEYBbONfuFGiAY9JV1I0uRlMijfGvkJjcCMDbFNB8ghbgelp0N0CiGrZ6oL0b"
+    "BdrJfKqrdvdKAPdwXj/NjT+scvp1KgIEp71Em6GEYBbONfuFGiAY9JV1I0uRlMijfGvkJjcCMDbFNB8ghbgelp0N0CiGrZ6oL0b"
     "Evv7c4LKn9DSfhGkVdGMGrRIybuuAQ+QGmn5lATO/jH7FAD/Tat5jPf2CsRJIi4BZSE3ro28x/t5jJ+pTiA64mVfnjKe4rh381Sy"
     "D+I+hAMpFou7xpkEthdoEb5XWfyd6KgNPH2aBQlJ3APh6V/nnWSyolXgbe4XUge3QxKEJrXZgjYxaRqgnYKv4NF7GxfUOI/8gDjO"
     "Ps7j6o9olSwjkL2Xi/BbkMy61RBe1gH2TlrZ90GcbV8A8H8hvOpptD6nepb8MCpjhgfQmnPJb+bqLKqXA7gSwpNuhGQJnqhoBEcp"
@@ -323,7 +323,7 @@ _LOGO_B64 = (
     "ru3qeZdTNnSzmDvEgu73o6M+yum2UeM8Lg5COLuz+TqJtAAIzLcQrG8gHbJTLaogweIpSrS1q5MQfIpiwLs+fZ1DnI/dtmALX6sO"
     "NLUVOx/i1HM9Mk+F+Aqm8O8bqYOrII7em3jy2eWdmHzaK2kdmEO4iwG6m9vdJzU2dQtBK2qJ4Ow6TADC7Tmn4gpa2K5Gxu0Afs7j"
     "452kRCJkw+UFaCx6xA/P83nLMAGsA+9/y1Wsq06hAbpVD/1niip02GIFysfRUl6i3rMO4thzvQZvJCjrDVhvzkkFyqI67z0oaD6i"
-    "Lho7k7kJOmhRdcLY1RTQWZTjCUdMl7EYQhwvZxCoT6El46zqlYjr7D6AZC6vlAKSabRLVkAApPPTwESHYlLj3X7SlXp0Rj+naoka"
+    "Lho7k7kJOmhRdcLY1RTQWZTjCUdMl7EYQhwvZxCoT6El46zqlYjr7D6AZC6vlAKSabRLVkAApPPTwESHYlLjX7SlXp0Rj+naoka"
     "obc5RgknnikQv8cKSLTN4aSa5vN9e0hd3Efq4j5IeOjjCfqqLfBG79W6oxQ4dmCTmumYbkE6+uMoWjbnQLznAxBP+YNcRFfSwn6O"
     "AO8XL/JjnGtZVt1AH/Xa2EnPI0j4mhRlkdSooqx+ngxJJjoO4pw9gj/vQ13aijgm+W5SGGt4ShvzQLmb4pANV3KiOPqdLooSvk7n"
     "0fNkSGr0KVxgIY+g90LCmn4NKc24ywN8DQDlApTMJJv1FHmnr3FU8roakJ1MpaW8hHpyKsTZtxBx67Nt1JvreRpbBYkcehaVbdB0"
@@ -345,15 +345,6 @@ _LOGO_B64 = (
     "SUufTopXdtenM/r0ZjKH9M9yiGN1KSQyZoh/38h5uJ3g7LL6dqUAqPHGJgbQJi09W/0agxRrOhoST30uLcjZ/NujtKp/A+kEsw5x"
     "irEGpZIHgFEbdNXv8ehvFCVIKNxcnh5eREA+DBKJ4ep3P424S/tqWstPpGxSlq1p0laAtnb3xY5dtDWtE1VmEbyW06I+HZJYMUKr"
     "+n5ItuIViLs67/IAXwNkOec590E4KVV+GkF5P0XpHAbh5PfjezZDIi9cKNxdpC2egcSOa1AuK2qn3Cd6mGfXkm653o56nmZB959F"
-    "DQVAIS3owyHFmlwEyBxamOtoXf6SVMhTEKcZUJkAM1bgtUceKLtY5BMJyidCUqun8bo20zK+DxLJsgoScrgdcc0Lf+NptuOIiUlh"
-    "FIe1u689dqe2jfetPh2mV1LUhAa7QVrWL4XUqn4RrU/QuryVFvU1EIfZFs8y1zRIFnOSZCW761xAi/8kSMPeE3gicO91TVJv5Otu"
-    "ngzKiJNG9CYDJNe+aOVeTA97Z+y8n20qHpoF3buWchnp7ZjS2jM5a3gqJMrhZQBOo1W9L993P0H6WogzbQ0mxvu2aiz44DgTkj15"
-    "JGmLU0nPuH58OyHx3qtJX9xJUF7vWfd+CzG/OXA9fRZNTDrCgjbpjedbb2dmeFa2cxAeRmv6DH5dxDG20Kq+hYB9L3+n05nTan5o"
-    "qiKpSS5IvSzn61B+XUYrPyIor0UcceHKdW7GxNjwqIl5MjHpOYC20qS9NbYGt30Qdyw/DVIkaBIpg4cgSRxXQupWr0uwUHVyjY4j"
-    "djHXJQj3vZyUxQkQbnwRpA7GMIQzvpu0xQME5rUQJ18jm5Dpio3dFRtzYA+jay3hIsb2KQFAIj0WQpI7XgPgVYijJJ6jJf0bAD8l"
-    "1eCkxP/d6X3eDIKxy348nOMP8u/bEcdp3wop07kOcR3sJB3uJv7Y9NDGTh07sEm1RdIAWLsKe6PKql4KiQA5nxb2ZEhdikcgoWw/"
-    "otXrUqMH+X9HQRx8x5DC2I8gvhfCHd9Pa/wGgvImxKFwLh47QGWsdh6FoEzHbSNo29jGQZs0ozPasQZISNt8iPPubEgCzBKCsYur"
-    "vhriyDsZ0iVmAa3nQYLvExCH402kMNbTSn5Bga/mt5NisPu5Up9Jjy42E5NGpYTKlk/agp1LyuJMUhbLINzyXkiyy0y+92la2a7b"
     "yF0QPnmbZxU7y91RFw6kx3vIYjQxMYA2aUn8ziIu+mIMcSEloLI11IGQuOpzISnmg6Qr7qGV/FtIzPK4Z/2WMDG1ulpPPhOTngdo"
     "432KHbuIZ5vltSf1NIRn5aYVpZ+BuK7yXaQz4FnGur41MDGOO4v7MT3sfj20sU1MMlTEMOGkFtrpzcQkeyvbxu7usdulK35lPdNx"
     "G9vwsLfmxcTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExKRbxLKSih3bnqeNbXpoY5uYmJiY"
@@ -421,6 +412,7 @@ def inject_theme(dark: bool):
 
     gold, gold_light, teal = "#B08D3E", "#E4C77A", "#2C5F58"
     house_tile = _HOUSE_TILE.format(fill=house_fill)
+
     # The embedded logo is black line-art on transparent; invert it to white
     # line-art in dark mode so it stays legible against the dark background.
     mark_filter = "filter: invert(1);" if dark else ""
@@ -439,71 +431,102 @@ def inject_theme(dark: bool):
             linear-gradient(180deg, {bg_top} 0%, {bg_bottom} 55%) !important;
         color: {text};
     }}
+
     [data-testid="stHeader"] {{ background: transparent !important; }}
     [data-testid="stToolbar"] {{ display: none; }}
 
     .block-container {{ max-width: 760px; padding-top: 3rem; padding-bottom: 4rem; }}
 
     .mikasa-brand {{
-        display: flex; align-items: center; gap: 1.4rem; margin-bottom: 0.2rem;
-        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 0.2rem;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow: visible;
     }}
+
     .mikasa-mark {{
-        width: clamp(70px, 12vw, 170px); height: auto; flex-shrink: 0;
+        width: 190px !important;
+        height: auto !important;
+        flex-shrink: 0 !important;
         {mark_filter}
     }}
+
     .mikasa-wordmark {{
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: clamp(5rem, 18vw, 12rem);
-    letter-spacing: -0.035em;
-    margin: 0;
-    line-height: 0.85;
+        font-family: 'Fraunces', serif !important;
+        font-weight: 600 !important;
+        font-size: 8rem !important;
+        letter-spacing: -0.04em !important;
+        line-height: 0.85 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        white-space: nowrap !important;
+        width: max-content !important;
+        flex-shrink: 0 !important;
 
-    background: linear-gradient(
-        110deg,
-        #8A6A24 0%,
-        #C9A23A 18%,
-        #FFE9A3 38%,
-        #B88920 52%,
-        #F5D76E 68%,
-        #A97816 82%,
-        #E8C65A 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+        background: linear-gradient(
+            110deg,
+            #8A6A24 0%,
+            #C9A23A 18%,
+            #FFE9A3 38%,
+            #B88920 52%,
+            #F5D76E 68%,
+            #A97816 82%,
+            #E8C65A 100%
+        ) !important;
 
-    text-shadow:
-        0 2px 8px rgba(176, 141, 62, 0.18),
-        0 0 24px rgba(228, 199, 122, 0.12);
-}}
-    .mikasa-tagline {{
-        font-size: 0.92rem; color: {text_muted}; margin: 0.5rem 0 2.4rem 0; max-width: 44ch;
-        line-height: 1.55; font-weight: 500;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+
+        text-shadow:
+            0 2px 8px rgba(176, 141, 62, 0.25),
+            0 0 25px rgba(228, 199, 122, 0.18) !important;
     }}
+
+    .mikasa-tagline {{
+        font-size: 0.92rem;
+        color: {text_muted};
+        margin: 0.5rem 0 2.4rem 0;
+        max-width: 44ch;
+        line-height: 1.55;
+        font-weight: 500;
+    }}
+
     .mikasa-instruction {{
-        font-size: 0.95rem; color: {text_muted}; margin-bottom: 1.1rem; font-weight: 600;
+        font-size: 0.95rem;
+        color: {text_muted};
+        margin-bottom: 1.1rem;
+        font-weight: 600;
     }}
 
     div[data-testid="stVerticalBlockBorderWrapper"].st-key-mikasa_card,
     .st-key-mikasa_card {{
-        background: {surface}; border: 1px solid {border}; border-radius: 14px;
-        padding: 0.6rem 1.7rem 1.4rem 1.7rem; box-shadow: {shadow};
+        background: {surface};
+        border: 1px solid {border};
+        border-radius: 14px;
+        padding: 0.6rem 1.7rem 1.4rem 1.7rem;
+        box-shadow: {shadow};
     }}
 
     label, .stSelectbox label, .stNumberInput label, .stMultiSelect label {{
-        font-family: 'Manrope', sans-serif !important; font-weight: 600 !important;
-        font-size: 0.82rem !important; color: {text_muted} !important;
+        font-family: 'Manrope', sans-serif !important;
+        font-weight: 600 !important;
+        font-size: 0.82rem !important;
+        color: {text_muted} !important;
         letter-spacing: 0.01em;
     }}
 
     [data-testid="stSelectbox"] > div > div,
     [data-testid="stNumberInput"] input,
     [data-testid="stMultiSelect"] > div > div {{
-        background: {input_bg} !important; border: 1px solid {border} !important;
+        background: {input_bg} !important;
+        border: 1px solid {border} !important;
         border-radius: 8px !important;
     }}
+
     /* Force readable text everywhere inside selects/multiselect — BaseWeb sets
        its own low-contrast color on inner spans that a parent-level rule
        above doesn't override, which is why closed dropdowns looked dim. */
@@ -511,38 +534,69 @@ def inject_theme(dark: bool):
     [data-testid="stMultiSelect"] * {{
         color: {text} !important;
     }}
+
     [data-testid="stMultiSelect"] span[data-baseweb="tag"],
     [data-testid="stMultiSelect"] span[data-baseweb="tag"] * {{
-        background: {teal} !important; border-radius: 6px !important; color: #F3F1EA !important;
+        background: {teal} !important;
+        border-radius: 6px !important;
+        color: #F3F1EA !important;
     }}
+
     ul[role="listbox"] {{ background: {input_bg} !important; }}
     ul[role="listbox"] li {{ color: {text} !important; }}
 
     [data-testid="stFormSubmitButton"] button {{
-        background: {gold} !important; color: #1A1204 !important; border: none !important;
-        border-radius: 8px !important; font-weight: 700 !important; padding: 0.7rem 0 !important;
-        font-size: 0.98rem !important; letter-spacing: 0.01em; transition: opacity 0.15s ease;
+        background: {gold} !important;
+        color: #1A1204 !important;
+        border: none !important;
+        border-radius: 8px !important;
+        font-weight: 700 !important;
+        padding: 0.7rem 0 !important;
+        font-size: 0.98rem !important;
+        letter-spacing: 0.01em;
+        transition: opacity 0.15s ease;
     }}
+
     [data-testid="stFormSubmitButton"] button:hover {{ opacity: 0.88; }}
 
     .mikasa-result {{
-        margin-top: 1.6rem; padding-top: 1.6rem; border-top: 1px solid {border};
+        margin-top: 1.6rem;
+        padding-top: 1.6rem;
+        border-top: 1px solid {border};
     }}
+
     .mikasa-result-label {{
-        font-size: 0.8rem; font-weight: 600; color: {text_muted}; letter-spacing: 0.02em;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: {text_muted};
+        letter-spacing: 0.02em;
         margin-bottom: 0.3rem;
     }}
+
     .mikasa-result-value {{
-        font-family: 'Fraunces', serif; font-weight: 500; font-size: 2.6rem; color: {gold};
+        font-family: 'Fraunces', serif;
+        font-weight: 500;
+        font-size: 2.6rem;
+        color: {gold};
         line-height: 1.1;
     }}
+
     .mikasa-result-note {{
-        font-size: 0.86rem; color: {text_muted}; margin-top: 0.6rem; line-height: 1.5; max-width: 52ch;
+        font-size: 0.86rem;
+        color: {text_muted};
+        margin-top: 0.6rem;
+        line-height: 1.5;
+        max-width: 52ch;
     }}
 
     .mikasa-footer {{
-        margin-top: 2.6rem; font-size: 0.8rem; color: {text_muted}; line-height: 1.6;
-        border-top: 1px solid {border}; padding-top: 1.1rem; max-width: 52ch;
+        margin-top: 2.6rem;
+        font-size: 0.8rem;
+        color: {text_muted};
+        line-height: 1.6;
+        border-top: 1px solid {border};
+        padding-top: 1.1rem;
+        max-width: 52ch;
     }}
     </style>
     """
@@ -555,12 +609,18 @@ def main():
         st.session_state.dark_mode = True
 
     top_l, top_r = st.columns([5, 1.3])
+
     with top_r:
         st.session_state.dark_mode = st.toggle(
-            "Dark", value=st.session_state.dark_mode, key="theme_toggle"
+            "Dark",
+            value=st.session_state.dark_mode,
+            key="theme_toggle"
         )
 
-    st.markdown(inject_theme(st.session_state.dark_mode), unsafe_allow_html=True)
+    st.markdown(
+        inject_theme(st.session_state.dark_mode),
+        unsafe_allow_html=True
+    )
 
     with top_l:
         st.markdown(
@@ -583,7 +643,7 @@ def main():
     locality_map = load_locality_map()
 
     # A real Streamlit container (with a stable key) rather than a raw
-    # markdown <div>, so the fields actually render *inside* the styled box
+    # markdown <div>, so the fields actually render inside the styled box
     # instead of leaving it as an empty bar with the form floating below it.
     with st.container(key="mikasa_card"):
         st.markdown(
@@ -606,19 +666,54 @@ def main():
                 is_furnished = st.selectbox("Furnishing", FURNISHING)
 
             with col2:
-                bedrooms = st.number_input("Bedrooms", min_value=1, max_value=20, value=2, step=1)
-                bathrooms = st.number_input("Bathrooms", min_value=1, max_value=20, value=2, step=1)
-                floor_area = st.number_input("Floor area (sq. m)", min_value=10.0, max_value=5000.0, value=100.0, step=5.0)
+                bedrooms = st.number_input(
+                    "Bedrooms",
+                    min_value=1,
+                    max_value=20,
+                    value=2,
+                    step=1
+                )
 
-            amenities = st.multiselect("Amenities", AMENITIES, default=["Tiled Floor", "24-hour Electricity"])
+                bathrooms = st.number_input(
+                    "Bathrooms",
+                    min_value=1,
+                    max_value=20,
+                    value=2,
+                    step=1
+                )
 
-            submitted = st.form_submit_button("Estimate rent", use_container_width=True)
+                floor_area = st.number_input(
+                    "Floor area (sq. m)",
+                    min_value=10.0,
+                    max_value=5000.0,
+                    value=100.0,
+                    step=5.0
+                )
+
+            amenities = st.multiselect(
+                "Amenities",
+                AMENITIES,
+                default=["Tiled Floor", "24-hour Electricity"]
+            )
+
+            submitted = st.form_submit_button(
+                "Estimate rent",
+                use_container_width=True
+            )
 
         if submitted:
             price = predict_price(
-                model, bedrooms, bathrooms, floor_area,
-                region, locality, category, is_furnished, amenities,
+                model,
+                bedrooms,
+                bathrooms,
+                floor_area,
+                region,
+                locality,
+                category,
+                is_furnished,
+                amenities,
             )
+
             st.markdown(
                 f"""
                 <div class="mikasa-result">
