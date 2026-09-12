@@ -455,7 +455,7 @@ def inject_theme(dark: bool):
     .mikasa-wordmark {{
     font-family: 'Fraunces', serif !important;
     font-weight: 600 !important;
-    font-size: 8rem !important;
+    font-size: 4rem !important;
     letter-spacing: -0.04em !important;
     line-height: 0.85 !important;
 
