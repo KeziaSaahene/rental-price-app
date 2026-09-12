@@ -453,10 +453,31 @@ def inject_theme(dark: bool):
         {mark_filter}
     }}
     .mikasa-wordmark {{
-        font-family: 'Fraunces', serif; font-weight: 600;
-        font-size: clamp(3.2rem, 13vw, 15rem);
-        letter-spacing: -0.02em; color: {text}; margin: 0; line-height: 0.95;
-    }}
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(5rem, 18vw, 12rem);
+    letter-spacing: -0.035em;
+    margin: 0;
+    line-height: 0.85;
+
+    background: linear-gradient(
+        110deg,
+        #8A6A24 0%,
+        #C9A23A 18%,
+        #FFE9A3 38%,
+        #B88920 52%,
+        #F5D76E 68%,
+        #A97816 82%,
+        #E8C65A 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow:
+        0 2px 8px rgba(176, 141, 62, 0.18),
+        0 0 24px rgba(228, 199, 122, 0.12);
+}}
     .mikasa-tagline {{
         font-size: 0.92rem; color: {text_muted}; margin: 0.5rem 0 2.4rem 0; max-width: 44ch;
         line-height: 1.55; font-weight: 500;
