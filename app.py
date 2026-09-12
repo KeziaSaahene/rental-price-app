@@ -1,5 +1,3 @@
-
-App · PY
 import json
 from pathlib import Path
  
