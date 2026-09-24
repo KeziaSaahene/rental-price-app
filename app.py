@@ -487,8 +487,9 @@ def inject_theme(dark: bool):
         0 0 25px rgba(228, 199, 122, 0.18) !important;
 }}
     .mikasa-tagline {{
-        font-size: 0.84rem; color: {text_muted}; margin: 0.2rem 0 0.55rem 0; max-width: 44ch;
-        line-height: 1.55; font-weight: 500;
+        font-size: 0.84rem; color: {text_muted}; margin: 0.2rem 0 0.55rem 0;
+        line-height: 1.55; font-weight: 500; max-width: none; width: 100%;
+        white-space: nowrap;
     }}
     .mikasa-instruction {{
         font-size: 0.86rem; color: {text_muted}; margin-bottom: 0.45rem; font-weight: 600;
