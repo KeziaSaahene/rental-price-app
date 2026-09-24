@@ -447,11 +447,14 @@ def inject_theme(dark: bool):
 
     .mikasa-brand {{
         display: flex; align-items: center; gap: 1.1rem; margin-bottom: 0.05rem;
-        flex-wrap: wrap;
+        flex-wrap: wrap; position: relative; z-index: 0;
     }}
     .mikasa-mark {{
-        width: clamp(60px, 10vw, 125px); height: auto; flex-shrink: 0;
+        width: clamp(60px, 10vw, 125px); max-width: 100%; height: auto; flex-shrink: 0;
         {mark_filter}
+    }}
+    [data-testid="stToggle"] {{
+        position: relative; z-index: 10;
     }}
     .mikasa-wordmark {{
     font-family: 'Fraunces', serif !important;
@@ -593,11 +596,10 @@ def main():
     if "dark_mode" not in st.session_state:
         st.session_state.dark_mode = True
 
-    top_l, top_r = st.columns([5, 1.3])
+    top_l, top_r = st.columns([5, 1.3], vertical_alignment="center")
     with top_r:
-        toggle_label = "Light" if st.session_state.dark_mode else "Dark"
         st.session_state.dark_mode = st.toggle(
-            toggle_label, value=st.session_state.dark_mode, key="theme_toggle"
+            "Dark", value=st.session_state.dark_mode, key="theme_toggle"
         )
 
     st.markdown(inject_theme(st.session_state.dark_mode), unsafe_allow_html=True)
