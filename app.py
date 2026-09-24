@@ -443,10 +443,10 @@ def inject_theme(dark: bool):
     [data-testid="stHeader"] {{ background: transparent !important; }}
     [data-testid="stToolbar"] {{ display: none; }}
 
-    .block-container {{ max-width: 760px; padding-top: 1.2rem; padding-bottom: 1rem; }}
+    .block-container {{ max-width: 760px; padding-top: 0.45rem; padding-bottom: 0.45rem; }}
 
     .mikasa-brand {{
-        display: flex; align-items: center; gap: 1.4rem; margin-bottom: 0.2rem;
+        display: flex; align-items: center; gap: 1.1rem; margin-bottom: 0.05rem;
         flex-wrap: wrap;
     }}
     .mikasa-mark {{
@@ -456,7 +456,7 @@ def inject_theme(dark: bool):
     .mikasa-wordmark {{
     font-family: 'Fraunces', serif !important;
     font-weight: 600 !important;
-    font-size: 3.2rem !important;
+    font-size: 3rem !important;
     letter-spacing: -0.04em !important;
     line-height: 0.85 !important;
 
@@ -487,17 +487,17 @@ def inject_theme(dark: bool):
         0 0 25px rgba(228, 199, 122, 0.18) !important;
 }}
     .mikasa-tagline {{
-        font-size: 0.88rem; color: {text_muted}; margin: 0.35rem 0 1rem 0; max-width: 44ch;
+        font-size: 0.84rem; color: {text_muted}; margin: 0.2rem 0 0.55rem 0; max-width: 44ch;
         line-height: 1.55; font-weight: 500;
     }}
     .mikasa-instruction {{
-        font-size: 0.9rem; color: {text_muted}; margin-bottom: 0.65rem; font-weight: 600;
+        font-size: 0.86rem; color: {text_muted}; margin-bottom: 0.45rem; font-weight: 600;
     }}
 
     div[data-testid="stVerticalBlockBorderWrapper"].st-key-mikasa_card,
     .st-key-mikasa_card {{
         background: {surface}; border: 1px solid {border}; border-radius: 14px;
-        padding: 0.45rem 1.4rem 0.8rem 1.4rem; box-shadow: {shadow};
+        padding: 0.3rem 1.3rem 0.5rem 1.3rem; box-shadow: {shadow};
     }}
 
     label, .stSelectbox label, .stNumberInput label, .stMultiSelect label {{
@@ -541,23 +541,23 @@ def inject_theme(dark: bool):
     [data-testid="stFormSubmitButton"] button:hover {{ opacity: 0.88; }}
 
     .mikasa-result {{
-        margin-top: 0.8rem; padding-top: 0.8rem; border-top: 1px solid {border};
+        margin-top: 0.45rem; padding-top: 0.45rem; border-top: 1px solid {border};
     }}
     .mikasa-result-label {{
         font-size: 0.8rem; font-weight: 600; color: {text_muted}; letter-spacing: 0.02em;
         margin-bottom: 0.3rem;
     }}
     .mikasa-result-value {{
-        font-family: 'Fraunces', serif; font-weight: 500; font-size: 2.25rem; color: {gold};
+        font-family: 'Fraunces', serif; font-weight: 500; font-size: 2.05rem; color: {gold};
         line-height: 1.1;
     }}
     .mikasa-result-note {{
-        font-size: 0.86rem; color: {text_muted}; margin-top: 0.6rem; line-height: 1.5; max-width: 52ch;
+        font-size: 0.86rem; color: {text_muted}; margin-top: 0.35rem; line-height: 1.35; max-width: 52ch;
     }}
 
     .mikasa-estimating {{
         display: flex; flex-direction: column; align-items: center; justify-content: center;
-        padding: 0.6rem 0 0.5rem;
+        padding: 0.35rem 0 0.3rem;
     }}
     .mikasa-spinner {{
         width: 34px; height: 34px;
@@ -645,6 +645,10 @@ def main():
                 floor_area = st.number_input("Floor area (sq. m)", min_value=10.0, max_value=5000.0, value=100.0, step=5.0)
 
             amenities = st.multiselect("Amenities", AMENITIES, default=["Tiled Floor", "24-hour Electricity"])
+            rental_period = st.selectbox(
+                "Rental period",
+                ["6 months", "1 year", "1.5 years", "2 years"],
+            )
 
             submitted = st.form_submit_button("Estimate rent", use_container_width=True)
 
@@ -667,14 +671,22 @@ def main():
                 region, locality, category, is_furnished, amenities,
             )
 
+            period_months = {
+                "6 months": 6,
+                "1 year": 12,
+                "1.5 years": 18,
+                "2 years": 24,
+            }
+            total_rent = price * period_months[rental_period]
+
             estimating.empty()
             st.markdown(
                 f"""
                 <div class="mikasa-result">
-                    <div class="mikasa-result-label">Estimated monthly rent</div>
-                    <div class="mikasa-result-value">GH₵ {price:,.0f}</div>
+                    <div class="mikasa-result-label">Estimated rent — {rental_period}</div>
+                    <div class="mikasa-result-value">GH₵ {total_rent:,.0f}</div>
                     <div class="mikasa-result-note">
-                        Based on comparable listings for this property type and location.
+                        Monthly estimate: GH₵ {price:,.0f}. Based on comparable listings for this property type and location.
                         Treat this as a guide alongside current market listings, not an exact valuation.
                     </div>
                 </div>
@@ -683,7 +695,7 @@ def main():
             )
 
     st.markdown(
-        '<div class="mikasa-footer">Mi Casa estimates are generated from historical '
+        '<div class="mikasa-footer" style="margin-top:0.25rem !important;">Mi Casa estimates are generated from historical '
         "rental listing data across Ghana and are indicative only.</div>",
         unsafe_allow_html=True,
     )
