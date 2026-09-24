@@ -514,9 +514,6 @@ def inject_theme(dark: bool):
     }}
 
     /* Match the number-input text to the white text used in the other inputs. */
-    [data-testid="stNumberInput"] label {{
-        color: {text} !important;
-    }}
     [data-testid="stNumberInput"] input {{
         color: {text} !important;
         -webkit-text-fill-color: {text} !important;
@@ -555,8 +552,7 @@ def inject_theme(dark: bool):
         line-height: 1.1;
     }}
     .mikasa-result-note {{
-        font-size: 0.86rem; color: {text_muted}; margin-top: 0.35rem; line-height: 1.3;
-        width: 100%; max-width: none;
+        font-size: 0.86rem; color: {text_muted}; margin-top: 0.35rem; line-height: 1.35; max-width: 52ch;
     }}
 
     .mikasa-estimating {{
@@ -690,8 +686,8 @@ def main():
                     <div class="mikasa-result-label">Estimated rent — {rental_period}</div>
                     <div class="mikasa-result-value">GH₵ {total_rent:,.0f}</div>
                     <div class="mikasa-result-note">
-                        <p class="mikasa-monthly">Monthly estimate: GH₵ {price:,.0f}</p>
-                        <p class="mikasa-guidance">Based on comparable listings for this property type and location. Treat this as a guide alongside current market listings, not an exact valuation.</p>
+                        Monthly estimate: GH₵ {price:,.0f}. Based on comparable listings for this property type and location.
+                        Treat this as a guide alongside current market listings, not an exact valuation.
                     </div>
                 </div>
                 """,
