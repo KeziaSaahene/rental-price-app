@@ -554,6 +554,25 @@ def inject_theme(dark: bool):
         font-size: 0.86rem; color: {text_muted}; margin-top: 0.6rem; line-height: 1.5; max-width: 52ch;
     }}
 
+    .mikasa-estimating {{
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        padding: 1.2rem 0 1rem;
+    }}
+    .mikasa-spinner {{
+        width: 34px; height: 34px;
+        border: 3px solid rgba(255,255,255,0.22);
+        border-top-color: {gold};
+        border-radius: 50%;
+        animation: mikasa-spin 0.8s linear infinite;
+    }}
+    .mikasa-estimating-text {{
+        margin-top: 0.65rem; font-size: 0.78rem; font-weight: 700;
+        color: {text}; letter-spacing: 0.16em;
+    }}
+    @keyframes mikasa-spin {{
+        to {{ transform: rotate(360deg); }}
+    }}
+
     .mikasa-footer {{
         margin-top: 2.6rem; font-size: 0.8rem; color: {text_muted}; line-height: 1.6;
         border-top: 1px solid {border}; padding-top: 1.1rem; max-width: 52ch;
@@ -629,10 +648,23 @@ def main():
             submitted = st.form_submit_button("Estimate rent", use_container_width=True)
 
         if submitted:
+            estimating = st.empty()
+            estimating.markdown(
+                """
+                <div class="mikasa-estimating">
+                    <div class="mikasa-spinner"></div>
+                    <div class="mikasa-estimating-text">ESTIMATING</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
             price = predict_price(
                 model, bedrooms, bathrooms, floor_area,
                 region, locality, category, is_furnished, amenities,
             )
+
+            estimating.empty()
             st.markdown(
                 f"""
                 <div class="mikasa-result">
