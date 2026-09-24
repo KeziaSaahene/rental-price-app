@@ -599,7 +599,7 @@ def main():
     top_l, top_r = st.columns([5, 1.3], vertical_alignment="center")
     with top_r:
         st.session_state.dark_mode = st.toggle(
-            "Light" if st.session_state.dark_mode else "Dark", value=st.session_state.dark_mode, key="theme_toggle"
+            "Dark" if st.session_state.dark_mode else "Light", value=st.session_state.dark_mode, key="theme_toggle"
         )
 
     st.markdown(inject_theme(st.session_state.dark_mode), unsafe_allow_html=True)
