@@ -511,6 +511,13 @@ def inject_theme(dark: bool):
         background: {input_bg} !important; border: 1px solid {border} !important;
         border-radius: 8px !important;
     }}
+
+    /* Match the number-input text to the white text used in the other inputs. */
+    [data-testid="stNumberInput"] input {{
+        color: {text} !important;
+        -webkit-text-fill-color: {text} !important;
+        caret-color: {text} !important;
+    }}
     /* Force readable text everywhere inside selects/multiselect — BaseWeb sets
        its own low-contrast color on inner spans that a parent-level rule
        above doesn't override, which is why closed dropdowns looked dim. */
