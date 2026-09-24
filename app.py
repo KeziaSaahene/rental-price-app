@@ -514,6 +514,9 @@ def inject_theme(dark: bool):
     }}
 
     /* Match the number-input text to the white text used in the other inputs. */
+    [data-testid="stNumberInput"] label {{
+        color: {text} !important;
+    }}
     [data-testid="stNumberInput"] input {{
         color: {text} !important;
         -webkit-text-fill-color: {text} !important;
@@ -552,7 +555,8 @@ def inject_theme(dark: bool):
         line-height: 1.1;
     }}
     .mikasa-result-note {{
-        font-size: 0.86rem; color: {text_muted}; margin-top: 0.35rem; line-height: 1.35; max-width: 52ch;
+        font-size: 0.86rem; color: {text_muted}; margin-top: 0.35rem; line-height: 1.3;
+        width: 100%; max-width: none;
     }}
 
     .mikasa-estimating {{
