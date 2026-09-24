@@ -408,7 +408,7 @@ def inject_theme(dark: bool):
         house_fill = "rgba(255,255,255,0.03)"
         surface, border = "#161F36", "#2A3757"
         text, text_muted = "#EDEAE2", "#8D97B4"
-        input_bg = "#FFFFFF"
+        input_bg = "#101A30"
         shadow = "0 25px 70px rgba(0,0,0,0.5)"
     else:
         bg_top, bg_bottom = "#FDFBF7", "#F3EEE3"
@@ -506,28 +506,10 @@ def inject_theme(dark: bool):
     }}
 
     [data-testid="stSelectbox"] > div > div,
-    [data-testid="stNumberInput"] > div,
     [data-testid="stNumberInput"] input,
     [data-testid="stMultiSelect"] > div > div {{
         background: {input_bg} !important; border: 1px solid {border} !important;
         border-radius: 8px !important;
-    }}
-
-    /* Keep every input white in dark mode, including number-input controls. */
-    [data-testid="stNumberInput"] input {{
-        background: #FFFFFF !important;
-        color: #151B2E !important;
-        -webkit-text-fill-color: #151B2E !important;
-        caret-color: #151B2E !important;
-    }}
-    [data-testid="stNumberInput"] button {{
-        background: #FFFFFF !important;
-        color: #151B2E !important;
-        border-left: 1px solid {border} !important;
-    }}
-    [data-testid="stNumberInput"] button svg {{
-        fill: #151B2E !important;
-        color: #151B2E !important;
     }}
     /* Force readable text everywhere inside selects/multiselect — BaseWeb sets
        its own low-contrast color on inner spans that a parent-level rule
@@ -564,31 +546,6 @@ def inject_theme(dark: bool):
     .mikasa-result-note {{
         font-size: 0.86rem; color: {text_muted}; margin-top: 0.6rem; line-height: 1.5; max-width: 52ch;
     }}
-    .mikasa-period-grid {{
-        display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.65rem;
-        margin-top: 1.1rem; margin-bottom: 1.5rem;
-    }}
-    .mikasa-period {{
-        background: {input_bg}; border: 1px solid {border}; border-radius: 10px;
-        padding: 0.75rem 0.65rem; text-align: center;
-    }}
-    .mikasa-period-label {{
-        font-size: 0.72rem; color: {text_muted}; font-weight: 600; margin-bottom: 0.25rem;
-    }}
-    .mikasa-period-value {{
-        font-family: 'Fraunces', serif; font-size: 1.05rem; color: {gold}; font-weight: 600;
-    }}
-    .mikasa-estimating {{
-        display: flex; align-items: center; justify-content: center; gap: 0.55rem;
-        padding: 0.8rem 1rem; margin: 1rem 0;
-        background: {input_bg}; border: 1px solid {border}; border-radius: 10px;
-        color: {text_muted}; font-size: 0.86rem; font-weight: 600;
-    }}
-    .mikasa-spinner {{
-        width: 16px; height: 16px; border: 2px solid {border};
-        border-top-color: {gold}; border-radius: 50%; animation: mikasa-spin 0.8s linear infinite;
-    }}
-    @keyframes mikasa-spin {{ to {{ transform: rotate(360deg); }} }}
 
     .mikasa-footer {{
         margin-top: 2.6rem; font-size: 0.8rem; color: {text_muted}; line-height: 1.6;
@@ -665,44 +622,18 @@ def main():
             submitted = st.form_submit_button("Estimate rent", use_container_width=True)
 
         if submitted:
-            with st.spinner("✨ Estimating your rent..."):
-                price = predict_price(
-                    model, bedrooms, bathrooms, floor_area,
-                    region, locality, category, is_furnished, amenities,
-                )
-
-            six_months = price * 6
-            one_year = price * 12
-            one_and_half_years = price * 18
-            two_years = price * 24
-
-            # Show the main prediction at the top so the result is immediately visible.
+            price = predict_price(
+                model, bedrooms, bathrooms, floor_area,
+                region, locality, category, is_furnished, amenities,
+            )
             st.markdown(
                 f"""
-                <div class="mikasa-result" style="margin-top:0; padding-top:0; border-top:0;">
-                    <div class="mikasa-result-label">Predicted monthly rent</div>
+                <div class="mikasa-result">
+                    <div class="mikasa-result-label">Estimated monthly rent</div>
                     <div class="mikasa-result-value">GH₵ {price:,.0f}</div>
                     <div class="mikasa-result-note">
-                        Your estimated rental amount, based on the property details entered above.
-                    </div>
-                </div>
-
-                <div class="mikasa-period-grid">
-                    <div class="mikasa-period">
-                        <div class="mikasa-period-label">6 months</div>
-                        <div class="mikasa-period-value">GH₵ {six_months:,.0f}</div>
-                    </div>
-                    <div class="mikasa-period">
-                        <div class="mikasa-period-label">1 year</div>
-                        <div class="mikasa-period-value">GH₵ {one_year:,.0f}</div>
-                    </div>
-                    <div class="mikasa-period">
-                        <div class="mikasa-period-label">1.5 years</div>
-                        <div class="mikasa-period-value">GH₵ {one_and_half_years:,.0f}</div>
-                    </div>
-                    <div class="mikasa-period">
-                        <div class="mikasa-period-label">2 years</div>
-                        <div class="mikasa-period-value">GH₵ {two_years:,.0f}</div>
+                        Based on comparable listings for this property type and location.
+                        Treat this as a guide alongside current market listings, not an exact valuation.
                     </div>
                 </div>
                 """,
