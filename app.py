@@ -690,8 +690,8 @@ def main():
                     <div class="mikasa-result-label">Estimated rent — {rental_period}</div>
                     <div class="mikasa-result-value">GH₵ {total_rent:,.0f}</div>
                     <div class="mikasa-result-note">
-                        Monthly estimate: GH₵ {price:,.0f}. Based on comparable listings for this property type and location.
-                        Treat this as a guide alongside current market listings, not an exact valuation.
+                        <p class="mikasa-monthly">Monthly estimate: GH₵ {price:,.0f}</p>
+                        <p class="mikasa-guidance">Based on comparable listings for this property type and location. Treat this as a guide alongside current market listings, not an exact valuation.</p>
                     </div>
                 </div>
                 """,
