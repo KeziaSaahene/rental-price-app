@@ -587,16 +587,26 @@ def inject_theme(dark: bool):
     """
 
 
+def _update_theme():
+    """Keep the theme state in sync with the Streamlit toggle."""
+    st.session_state.dark_mode = st.session_state.theme_toggle
+
+
 def main():
     st.set_page_config(page_title="Mi Casa — Rental Valuation", layout="centered")
 
     if "dark_mode" not in st.session_state:
         st.session_state.dark_mode = True
 
+    if "theme_toggle" not in st.session_state:
+        st.session_state.theme_toggle = st.session_state.dark_mode
+
     top_l, top_r = st.columns([5, 1.3])
     with top_r:
-        st.session_state.dark_mode = st.toggle(
-            "Dark", value=st.session_state.dark_mode, key="theme_toggle"
+        st.toggle(
+            "Dark",
+            key="theme_toggle",
+            on_change=_update_theme,
         )
 
     st.markdown(inject_theme(st.session_state.dark_mode), unsafe_allow_html=True)
