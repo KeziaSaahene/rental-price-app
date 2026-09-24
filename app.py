@@ -1,4 +1,5 @@
 import json
+import time
 from pathlib import Path
 
 import joblib
@@ -653,11 +654,13 @@ def main():
                 """
                 <div class="mikasa-estimating">
                     <div class="mikasa-spinner"></div>
-                    <div class="mikasa-estimating-text">ESTIMATING</div>
+                    <div class="mikasa-estimating-text">Estimating</div>
                 </div>
                 """,
                 unsafe_allow_html=True,
             )
+
+            time.sleep(1)
 
             price = predict_price(
                 model, bedrooms, bathrooms, floor_area,
