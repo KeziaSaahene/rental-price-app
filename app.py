@@ -595,10 +595,9 @@ def main():
 
     top_l, top_r = st.columns([5, 1.3])
     with top_r:
+        toggle_label = "Light" if st.session_state.dark_mode else "Dark"
         st.session_state.dark_mode = st.toggle(
-            "Light" if st.session_state.dark_mode else "Dark",
-            value=st.session_state.dark_mode,
-            key="theme_toggle",
+            toggle_label, value=st.session_state.dark_mode, key="theme_toggle"
         )
 
     st.markdown(inject_theme(st.session_state.dark_mode), unsafe_allow_html=True)
