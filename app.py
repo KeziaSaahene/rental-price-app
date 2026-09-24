@@ -443,20 +443,20 @@ def inject_theme(dark: bool):
     [data-testid="stHeader"] {{ background: transparent !important; }}
     [data-testid="stToolbar"] {{ display: none; }}
 
-    .block-container {{ max-width: 760px; padding-top: 3rem; padding-bottom: 4rem; }}
+    .block-container {{ max-width: 760px; padding-top: 1.2rem; padding-bottom: 1rem; }}
 
     .mikasa-brand {{
         display: flex; align-items: center; gap: 1.4rem; margin-bottom: 0.2rem;
         flex-wrap: wrap;
     }}
     .mikasa-mark {{
-        width: clamp(70px, 12vw, 170px); height: auto; flex-shrink: 0;
+        width: clamp(60px, 10vw, 125px); height: auto; flex-shrink: 0;
         {mark_filter}
     }}
     .mikasa-wordmark {{
     font-family: 'Fraunces', serif !important;
     font-weight: 600 !important;
-    font-size: 4rem !important;
+    font-size: 3.2rem !important;
     letter-spacing: -0.04em !important;
     line-height: 0.85 !important;
 
@@ -487,17 +487,17 @@ def inject_theme(dark: bool):
         0 0 25px rgba(228, 199, 122, 0.18) !important;
 }}
     .mikasa-tagline {{
-        font-size: 0.92rem; color: {text_muted}; margin: 0.5rem 0 2.4rem 0; max-width: 44ch;
+        font-size: 0.88rem; color: {text_muted}; margin: 0.35rem 0 1rem 0; max-width: 44ch;
         line-height: 1.55; font-weight: 500;
     }}
     .mikasa-instruction {{
-        font-size: 0.95rem; color: {text_muted}; margin-bottom: 1.1rem; font-weight: 600;
+        font-size: 0.9rem; color: {text_muted}; margin-bottom: 0.65rem; font-weight: 600;
     }}
 
     div[data-testid="stVerticalBlockBorderWrapper"].st-key-mikasa_card,
     .st-key-mikasa_card {{
         background: {surface}; border: 1px solid {border}; border-radius: 14px;
-        padding: 0.6rem 1.7rem 1.4rem 1.7rem; box-shadow: {shadow};
+        padding: 0.45rem 1.4rem 0.8rem 1.4rem; box-shadow: {shadow};
     }}
 
     label, .stSelectbox label, .stNumberInput label, .stMultiSelect label {{
@@ -541,14 +541,14 @@ def inject_theme(dark: bool):
     [data-testid="stFormSubmitButton"] button:hover {{ opacity: 0.88; }}
 
     .mikasa-result {{
-        margin-top: 1.6rem; padding-top: 1.6rem; border-top: 1px solid {border};
+        margin-top: 0.8rem; padding-top: 0.8rem; border-top: 1px solid {border};
     }}
     .mikasa-result-label {{
         font-size: 0.8rem; font-weight: 600; color: {text_muted}; letter-spacing: 0.02em;
         margin-bottom: 0.3rem;
     }}
     .mikasa-result-value {{
-        font-family: 'Fraunces', serif; font-weight: 500; font-size: 2.6rem; color: {gold};
+        font-family: 'Fraunces', serif; font-weight: 500; font-size: 2.25rem; color: {gold};
         line-height: 1.1;
     }}
     .mikasa-result-note {{
@@ -557,7 +557,7 @@ def inject_theme(dark: bool):
 
     .mikasa-estimating {{
         display: flex; flex-direction: column; align-items: center; justify-content: center;
-        padding: 1.2rem 0 1rem;
+        padding: 0.6rem 0 0.5rem;
     }}
     .mikasa-spinner {{
         width: 34px; height: 34px;
@@ -567,7 +567,7 @@ def inject_theme(dark: bool):
         animation: mikasa-spin 0.8s linear infinite;
     }}
     .mikasa-estimating-text {{
-        margin-top: 0.65rem; font-size: 0.78rem; font-weight: 700;
+        margin-top: 0.45rem; font-size: 0.75rem; font-weight: 700;
         color: {text}; letter-spacing: 0.16em;
     }}
     @keyframes mikasa-spin {{
@@ -575,7 +575,7 @@ def inject_theme(dark: bool):
     }}
 
     .mikasa-footer {{
-        margin-top: 2.6rem; font-size: 0.8rem; color: {text_muted}; line-height: 1.6;
+        margin-top: 1rem; font-size: 0.76rem; color: {text_muted}; line-height: 1.6;
         border-top: 1px solid {border}; padding-top: 1.1rem; max-width: 52ch;
     }}
     </style>
